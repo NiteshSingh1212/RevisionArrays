@@ -1,0 +1,140 @@
+#include<iostream>
+#include<vector>
+#include<limits.h>
+using namespace std;
+// int miniN(int arr[],int n){
+//      int mini=INT_MAX;
+//      for(int i=0;i<n;i++){
+//         if(arr[i]<mini){
+//             mini=arr[i];
+//         }
+//     }return mini;
+// }
+// void extremeP(int arr[],int n){
+//     int s=0,e=n-1;
+//     while(s<=e){
+//     swap(arr[s],arr[e]);
+//    cout<<arr[e]<<" "<<arr[s]<<" ";
+//    s++;e--;
+//    }
+// }
+// void reverse(int arr[],int n){
+//     int s=0,e=n-1;
+//     while(s<=e){
+//     swap(arr[s],arr[e]);
+//     s++;
+//     e--;
+//    }
+// }
+// int findUnique(int arr[],int n){
+//     int ans=0;
+//   for(int i=0;i<n;i++){
+//     ans=arr[i]^ans;
+//   }return ans;
+// }
+// void printRowSum(int arr[][3],int r,int c){
+//       int sum=0;
+//   for(int i=0;i<r;i++){
+//     for(int j=0;j<c;j++){
+//    sum=sum+arr[i][j];
+//     }
+//     cout<<i<<" "<<sum<<endl;
+//   }
+// }
+// void printColSum(int arr[][3],int r,int c){
+//   for(int i=0;i<r;i++){
+//      int sum=0;
+//     for(int j=0;j<c;j++){
+//    sum=sum+arr[j][i];
+//     }
+//     cout<<" "<<sum<<endl;
+//   }
+// }
+void transposeMatrix(int arr[][3],int r,int c,int transpose[][3]){
+    for(int i=0;i<r;i++){
+  for(int j=0;j<r;j++){
+     transpose[i][j]=arr[j][i];
+    }
+    }
+}
+
+int main(){
+    // int arr[100][100]={60,20,30,40,50};
+    // int brr[100][100]={60,70,30,90,100};
+    // int n=5;
+    // int m=2;
+    int arr[][3]={{1,2,3},{4,5,6},{7,8,9}};
+    int r=3,c=3;
+    // cout<<" Input "<<" ";
+    // // for(int i=0;i<n;i++){
+    // //     // cin>>arr[i];
+    // //     arr[i]=1;
+    // // }
+    // cout<<" Output"<<" ";
+    // for(int i=0;i<n;i++){
+    //     cout<<arr[i]<<" ";
+    // }
+
+    // int zeroC=0,oneC=0;
+    //  for(int i=0;i<n;i++){
+    //     if(arr[i]==0){
+    //         zeroC++;
+    //     }
+    //     else{
+    //         oneC++;
+    //     }
+    // }
+    // cout<<zeroC<<endl;
+    // cout<<oneC<<endl;
+//  int maxi=INT_MIN;
+//      for(int i=0;i<n;i++){
+//         if(arr[i]>maxi){
+//             maxi=arr[i];
+//         }
+//     }
+//  cout<<miniN(arr,n);
+//  extremeP(arr,n);
+// reverse(arr,n);   
+//  cout<<findUnique(arr,n);
+// vector<int> ans;
+//    for(int i=0;i<n;i++){
+//     ans.push_back(arr[i]);
+//    }
+//    for(int i=0;i<m;i++){
+//     ans.push_back(brr[i]);
+//    }
+//  for(int i=0;i<m+n;i++){
+//     cout<<ans[i]<<" ";
+//  }  
+ 
+//  for(int i=0;i<n;i++){
+//     for(int j=0;j<m;j++){
+//     if(arr[i]==brr[j]){
+//     ans.push_back(arr[i]);
+//     }
+//     }
+//    }
+
+    // for(auto value: ans){
+    // cout<<value<<" ";
+    // }
+//   int target=120;
+//  for(int i=0;i<n;i++){
+//     for(int j=i;j<m;j++){
+//     if(arr[i]+brr[j]==target){
+//     cout<<arr[i]<<" "<<brr[j]<<endl;;
+//     }
+//     }
+//    }
+// printColSum(arr,r,c);
+// int transpose[3][3];
+// transposeMatrix(arr,r,c,transpose);
+//   for(int i=0;i<3;i++){
+//       for(int j=0;j<3;j++){
+//         cout<<transpose[i][j]<<" "; 
+//     }cout<<endl;
+//     }  
+ 
+   
+
+}
